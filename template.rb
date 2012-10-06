@@ -124,6 +124,43 @@ inside('vendor/assets/javascripts') do
     run 'curl -s https://raw.github.com/keithclark/selectivizr/master/selectivizr.js > selectivizr.js'
   end
 
+# Database
+
+file "config/database.yml", <<-DATABASE, :force => true
+development:
+  adapter: postgresql
+  database: #{app_name}_development
+  host: localhost
+  user: postgres
+  password:
+  pool: 5
+  timeout: 5000
+  template: template0
+
+test: &test
+  adapter: postgresql
+  database: #{app_name}_test
+  host: localhost
+  user: postgres
+  password:
+  pool: 5
+  timeout: 5000
+  template: template0
+
+production:
+  adapter: postgresql
+  database: #{app_name}_production
+  host: localhost
+  user: postgres
+  password:
+  pool: 5
+  timeout: 5000
+  template: template0
+
+cucumber:
+  <<: *test
+
+DATABASE
 
 
 
