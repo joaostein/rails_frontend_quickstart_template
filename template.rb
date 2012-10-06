@@ -1,3 +1,19 @@
+# Helpers > Replace Line
+
+def replace_line(path, options = {})
+  lines = File.open(path).readlines
+  lines.map! do |line|
+    if line.match(options[:match])
+      line = "#{options[:with].rstrip}\n"
+    end
+    line
+  end 
+
+  run "rm #{path}"
+  File.open(path, 'w+') { |file| file << lines.join }
+end
+
+
 # Removes the default index specified on default
 
 run "rm public/index.html"
