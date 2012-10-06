@@ -28,6 +28,20 @@ group :assets do
 end
 GEMFILE
 
+# Create example project file for Sublime Text 2.
+
+file "example.sublime-project", <<-CODE
+{
+  "folders":
+  [
+    {
+      "folder_exclude_patterns": ["db", "lib", "doc", "log", "tmp", "script", "test"],
+      "file_exclude_patterns": ["config.ru", "Gemfile.lock", "Procfile", "Rakefile", "README.rdoc", ".gitkeep"]
+    }
+  ]
+}
+CODE
+
 # Create .gitignore
 
 file ".gitignore", <<-CODE, :force => true
