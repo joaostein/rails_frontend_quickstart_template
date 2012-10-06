@@ -30,7 +30,7 @@ GEMFILE
 
 # Create .gitignore
 
-load_template "gitignore.rb"
+run 'curl https://raw.github.com/joaostein/frontend_template/master/gitignore.rb'
 
 # Download JavaScript libraries
 
