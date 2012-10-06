@@ -124,7 +124,7 @@ inside('vendor/assets/javascripts') do
     run 'curl -s https://raw.github.com/keithclark/selectivizr/master/selectivizr.js > selectivizr.js'
   end
 
-# Database
+# Database Config
 
 file "config/database.yml", <<-DATABASE, :force => true
 development:
@@ -161,6 +161,10 @@ cucumber:
   <<: *test
 
 DATABASE
+
+# Configure precompile
+
+replace_line('config/environments/production.rb', :match => /config.assets.precompile \+=/, :with => '  config.assets.precompile += %w( modernizr.js selectivizr.js holder.js hashgrid.js )')
 
 
 
