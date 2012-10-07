@@ -192,6 +192,12 @@ inside('app') do
 # Generate Contollers
 
 generate(:controller, "home", "index")
+generate(:controller, "styleguide")
+
+# Generate default routes
+
+route "root :to => 'home#index'"
+route "match 'styleguide' => 'styleguide#index'"
 
 
 
