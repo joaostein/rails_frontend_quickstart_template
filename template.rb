@@ -182,8 +182,12 @@ DATABASE
 
 replace_line('config/environments/production.rb', :match => /config.assets.precompile \+=/, :with => '  config.assets.precompile += %w( modernizr.js selectivizr.js holder.js hashgrid.js )')
 
+# Download assets basic boilerplate based on SMACSS
 
-
+inside('app') do
+    run 'rm -rf assets/*'
+    run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets"
+  end
 
 
 
