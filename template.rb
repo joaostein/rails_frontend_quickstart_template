@@ -191,7 +191,7 @@ inside('app') do
 
 # Generate Contollers
 
-generate(:controller, "home")
+generate(:controller, "home", "index")
 
 
 
