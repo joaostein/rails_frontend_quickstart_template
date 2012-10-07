@@ -196,6 +196,7 @@ generate(:controller, "styleguide")
 
 # Generate default routes
 
+replace_line('config/routes.rb', :match => /get "home\/index"/, :with => '')
 route "root :to => 'home#index'"
 route "match 'styleguide' => 'styleguide#index'"
 
