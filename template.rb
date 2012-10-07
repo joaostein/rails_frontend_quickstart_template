@@ -189,6 +189,11 @@ inside('app') do
     run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets"
   end
 
+# Generate Contollers
+
+generate(:controller, "home")
+
+
 
 
 
