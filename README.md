@@ -23,3 +23,10 @@ This is a setup that brings a base rails app with the basic files needed to star
 
 All the views and assets used in this template are located at https://github.com/joaostein/rails_frontend_assets_boilerplate.
 
+## Author
+
+[Joao Stein](http://twitter.com/joaostein)
+
+## Copyright
+
+[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
