@@ -204,6 +204,7 @@ inside('app') do
 # Update/create view's files
 
 inside('app/views/layouts') do
+    run 'rm application.html.erb'
     run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
   end
 
