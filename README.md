@@ -1,4 +1,4 @@
-# Rails Quick Start Frontend Template
+# Rails Frontend Quick Start Template
 
 This is a setup that brings a base rails app with the basic files needed to start developing the frontend. It includes:
 
