@@ -204,11 +204,11 @@ inside('app') do
 # Update/create view's files
 
 inside('assets/views/layouts') do
-    run 'https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
+    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
   end
 
 inside('assets/views/styleguide') do
-    run 'https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/style-guide.slim > index.slim'
+    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/style-guide.slim > index.slim'
   end
 
 inside('assets/views/home') do
