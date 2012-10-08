@@ -3,15 +3,15 @@
 This is a setup that brings a base rails app with the basic files needed to start developing the frontend. It includes:
 
 * Slim
-  ** Application layout based on HTML 5 boiler plate
-  ** Basic styleguide elements
+  * Application layout based on HTML 5 boiler plate
+  * Basic styleguide elements
 * Sass/Compass (Based on SMACSS)
-  ** Susy grid
+  * Susy grid
 * Javascripts Librarys / Plugins
-  ** Modernizr
-  ** Selectivizr
-  ** Hashgrid
-  ** Holder.js
+  * Modernizr
+  * Selectivizr
+  * Hashgrid
+  * Holder.js
 
 ## Usage
 
