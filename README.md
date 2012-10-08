@@ -23,7 +23,7 @@ To start server run `foreman start` and access at http://localhost:5000/
 
 ## Notes
 
-All the views and assets used in this template are located at https://github.com/joaostein/rails_frontend_assets_boilerplate.
+All the views and assets used in this template are located at https://github.com/joaostein/rails_frontend_assets_template.
 
 ## Author
 
