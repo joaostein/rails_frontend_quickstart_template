@@ -203,19 +203,19 @@ inside('app') do
 
 # Update/create view's files
 
-inside('assets/views/layouts') do
+inside('app/views/layouts') do
     run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
   end
 
-inside('assets/views/styleguide') do
+inside('app/views/styleguide') do
     run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/style-guide.slim > index.slim'
   end
 
-inside('assets/views/home') do
+inside('app/views/home') do
     run 'rm -rf *'
   end
 
-file "assets/views/home/index.slim", <<-CODE
+file "app/views/home/index.slim", <<-CODE
 h1 Homepage
 p Lorem ipsum
 CODE
