@@ -19,6 +19,8 @@ This is a setup that brings a base rails app with the basic files needed to star
 
     rails new appname -d postgresql -m "https://raw.github.com/joaostein/frontend_template/master/template.rb"
 
+    To start server run `foreman start` and access at http://localhost:5000/
+
 ## Notes
 
 All the views and assets used in this template are located at https://github.com/joaostein/rails_frontend_assets_boilerplate.
