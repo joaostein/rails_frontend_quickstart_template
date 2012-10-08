@@ -5,10 +5,11 @@ This is a setup that brings a base rails app with the basic files needed to star
 * Slim
   * Application layout based on HTML 5 boilerplate - (http://html5boilerplate.com/)
   * Basic styleguide elements
-* Sass/Compass (Based on SMACSS - http://smacss.com/)
+* Sass & Compass
+  * File structures based and adapted from SMACSS - (http://smacss.com/)
   * Susy grid - (http://susy.oddbird.net/)
   * Normalize - (http://necolas.github.com/normalize.css/)
-* Javascripts Librarys / Plugins
+* Javascripts Librarys & Plugins
   * Modernizr - (http://modernizr.com/)
   * Selectivizr - (http://selectivizr.com/)
   * Hashgrid - (http://hashgrid.com/)
