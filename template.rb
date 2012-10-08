@@ -201,6 +201,25 @@ inside('app') do
     run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets --exclude '*.slim'"
   end
 
+# Update/create view's files
+
+inside('assets/views/layouts') do
+    run 'https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
+  end
+
+inside('assets/views/styleguide') do
+    run 'https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/style-guide.slim > index.slim'
+  end
+
+inside('assets/views/home') do
+    run 'rm -rf *'
+  end
+
+file "assets/views/home/index.slim", <<-CODE
+h1 Homepage
+p Lorem ipsum
+CODE
+
 
 
 
