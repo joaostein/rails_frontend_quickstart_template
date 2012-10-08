@@ -224,3 +224,10 @@ CODE
 # Run db:create:all
 
 rake("db:create:all")
+
+# Git init/first commit
+
+git :init
+git :add => '.'
+git :commit => "-a -m 'First Commit'"
+
