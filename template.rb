@@ -221,15 +221,6 @@ h1 Homepage
 p Lorem ipsum
 CODE
 
+# Run db:create:all
 
-
-
-
-
-
-
-
-
-
-
-
+rake("db:create:all")
