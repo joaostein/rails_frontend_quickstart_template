@@ -27,7 +27,7 @@ All the views and assets used in this template are located at https://github.com
 
 ## Author
 
-[Joao Stein](http://twitter.com/joaostein)
+* [Joao Stein](http://twitter.com/joaostein)
 
 ## Copyright
 
