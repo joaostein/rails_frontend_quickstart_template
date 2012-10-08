@@ -198,7 +198,7 @@ route "match 'styleguide' => 'styleguide#index'"
 
 inside('app') do
     run 'rm -rf assets/*'
-    run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets"
+    run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets --exclude '*.slim'"
   end
 
 
