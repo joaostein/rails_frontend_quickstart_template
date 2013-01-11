@@ -29,7 +29,7 @@ CODE
 file "Gemfile", <<-GEMFILE, :force => true
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'pg'
 gem 'slim'
@@ -198,18 +198,18 @@ route "match 'styleguide' => 'styleguide#index'"
 
 inside('app') do
     run 'rm -rf assets/*'
-    run "curl -L https://github.com/joaostein/rails_frontend_assets_boilerplate/tarball/master | tar zx --strip-components=1 -C assets --exclude '*.slim'"
+    run "curl -L https://github.com/joaostein/rails_frontend_assets_template/tarball/master | tar zx --strip-components=1 -C assets --exclude '*.slim'"
   end
 
 # Update/create view's files
 
 inside('app/views/layouts') do
     run 'rm application.html.erb'
-    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/application.slim > application.slim'
+    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_template/master/application.slim > application.slim'
   end
 
 inside('app/views/styleguide') do
-    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_boilerplate/master/style-guide.slim > index.slim'
+    run 'curl https://raw.github.com/joaostein/rails_frontend_assets_template/master/style-guide.slim > index.slim'
   end
 
 inside('app/views/home') do
